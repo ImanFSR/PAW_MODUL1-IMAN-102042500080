@@ -1,0 +1,316 @@
+/* Reset & Dark Palette Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Consolas', 'Courier New', monospace, sans-serif;
+}
+
+body {
+    background-color: #0b0d13;
+    color: #e2e8f0;
+    min-height: 100vh;
+}
+
+/* Header Navbar */
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #121620;
+    border-bottom: 2px solid #1e2638;
+}
+
+.logo-mark {
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.logo-mark span {
+    color: #00f2fe;
+}
+
+.menu-nav a {
+    color: #8b9bb4;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: 0.2s ease;
+}
+
+.menu-nav a:hover,
+.menu-nav a.active-nav {
+    color: #00f2fe;
+}
+
+/* Spotlight / Hero */
+.spotlight {
+    padding: 40px 8% 20px 8%;
+}
+
+.spotlight-card {
+    background: radial-gradient(circle at top left, #1b2333 0%, #10141e 100%);
+    border: 1px solid #232d42;
+    border-left: 5px solid #00f2fe;
+    border-radius: 12px;
+    padding: 50px 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.tag-live {
+    font-size: 11px;
+    color: #00f2fe;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.headline {
+    font-size: 36px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    color: #94a3b8;
+    font-size: 14px;
+    max-width: 600px;
+    margin-bottom: 28px;
+    line-height: 1.6;
+}
+
+.btn-spotlight {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #00f2fe;
+    color: #050b14;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    transition: 0.2s ease;
+}
+
+.btn-spotlight:hover {
+    background-color: #38ef7d;
+    box-shadow: 0 0 15px rgba(56, 239, 125, 0.4);
+}
+
+/* Section Katalog */
+.inventory-section {
+    padding: 30px 8% 70px 8%;
+}
+
+.inventory-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #1a2233;
+    padding-bottom: 15px;
+}
+
+.prefix {
+    font-size: 11px;
+    color: #00f2fe;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.bar-info h2 {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.stat-pill {
+    background: #141a26;
+    border: 1px solid #28354d;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 12px;
+    color: #cbd5e1;
+}
+
+.stat-pill strong {
+    color: #38ef7d;
+}
+
+/* Grid Deck */
+.grid-deck {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.deck-card {
+    background-color: #121722;
+    border: 1px solid #1f293d;
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.deck-card:hover {
+    transform: translateY(-6px);
+    border-color: #00f2fe;
+    box-shadow: 0 8px 25px rgba(0, 242, 254, 0.1);
+}
+
+.card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.meta-tag {
+    font-size: 11px;
+    color: #64748b;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.indicator {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 3px 10px;
+    border-radius: 4px;
+}
+
+.indicator.live {
+    background: rgba(16, 185, 129, 0.15);
+    color: #34d399;
+    border: 1px solid #059669;
+}
+
+.indicator.void {
+    background: rgba(239, 68, 68, 0.15);
+    color: #f87171;
+    border: 1px solid #dc2626;
+}
+
+.item-name {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+/* Price Wrap */
+.price-wrap {
+    margin-bottom: 12px;
+}
+
+.promo-strip {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 4px;
+}
+
+.old-price {
+    font-size: 12px;
+    color: #64748b;
+    text-decoration: line-through;
+}
+
+.disc-label {
+    font-size: 10px;
+    font-weight: 800;
+    background: #e11d48;
+    color: #ffffff;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.current-price {
+    font-size: 20px;
+    font-weight: 900;
+    color: #00f2fe;
+}
+
+.stock-badge {
+    font-size: 12px;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.stock-badge span {
+    color: #cbd5e1;
+    font-weight: 700;
+}
+
+/* Tombol Aksi */
+.trigger-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    border: none;
+    border-radius: 6px;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+}
+
+.trigger-btn.active-state {
+    background: #1e293b;
+    color: #00f2fe;
+    border: 1px solid #00f2fe;
+    cursor: pointer;
+}
+
+.trigger-btn.active-state:hover {
+    background: #00f2fe;
+    color: #0b0d13;
+}
+
+.trigger-btn.locked-state {
+    background: #151a24;
+    color: #475569;
+    border: 1px solid #232c3d;
+    cursor: not-allowed;
+}
+
+/* Footer */
+.system-footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #08090d;
+    border-top: 1px solid #161b26;
+    color: #64748b;
+    font-size: 12px;
+}
+
+/* Media Query Responsif */
+@media (max-width: 950px) {
+    .grid-deck {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 620px) {
+    .grid-deck {
+        grid-template-columns: 1fr;
+    }
+    .inventory-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .spotlight-card {
+        padding: 35px 25px;
+    }
+}
